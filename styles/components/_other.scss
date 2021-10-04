@@ -1,0 +1,41 @@
+.hid {
+  font-size: 0;
+  width: 1px;
+  height: 1px;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+
+/*
+  https://www.bestcssbuttongenerator.com/
+*/
+
+.btn-acceso {
+  box-shadow: inset 0px -3px 7px 0px #29bbff;
+  background: var(--blue) linear-gradient(to bottom, #2dabf9 5%, var(--blue) 100%);
+  border-radius: 3px;
+  border: 1px solid #0b0e07;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--white);
+  font-size: 15px;
+  padding: 9px 23px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #263666;
+  text-align: center;
+
+  &:hover {
+    background: #0688fa linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+  }
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+}
+

@@ -1,0 +1,126 @@
+@import "../utilities/variables";
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--metal);
+}
+
+.body-container {
+  width: 1200px;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--white);
+}
+
+.header-container {
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: 600;
+  padding: $default-padding-value;
+
+  img {
+    height: auto;
+  }
+}
+
+.banner-container {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: auto;
+  }
+
+  figcaption {
+    margin-top: $default-padding-value / 2;
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--orange);
+    // alterado para mejor contraste
+    text-align: center;
+  }
+}
+
+.listado-servicios-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 0 $default-padding-value /2 $default-padding-value /2;
+
+  article {
+    padding: $default-padding-value / 2;
+    width: 347px;
+
+    .inner-content-container {
+      border: 2px var(--blue) solid;
+      display: flex;
+      flex-direction: column;
+
+      img {
+        width: auto;
+      }
+
+      h3 {
+        text-align: center;
+        background-color: var(--blue);
+        color: var(--white);
+        font-weight: 800;
+
+      }
+
+      p {
+        text-align: justify;
+        padding: 10px;
+      }
+
+      .btn-acceso {
+        margin: $default-padding-value auto $default-padding-value/2;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.footer-container {
+  padding: $default-padding-value;
+  background-color: var(--footer-blue);
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
+
+  .disclaimer-container {
+    display: flex;
+    flex-direction: column;
+    padding-right: $default-padding-value * 4;
+
+    p {
+      text-align: justify;
+    }
+
+    img {
+      margin: auto;
+      width: 200px;
+    }
+  }
+
+  .social-container {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      margin: $default-padding-value/2 auto;
+      font-weight: 700;
+    }
+
+    .social-icons-container {
+      margin-top: auto;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

@@ -1,0 +1,211 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700;800&display=swap");
+/*
+                   NOTA AL PROFESOR:
+            La fuente "Verdana" es propiedad
+            de Microsoft y no encontré forma
+            de descargarla o usarla sin pag-
+            -ar. (OS: Debian GNU/Linux).
+
+            En su lugar usé "Open Sans".
+            que a mi parecer es similar.
+ */
+/*
+    reglas de imágenes
+*/
+.hid {
+  font-size: 0;
+  width: 1px;
+  height: 1px;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/*
+  https://www.bestcssbuttongenerator.com/
+*/
+.btn-acceso {
+  box-shadow: inset 0px -3px 7px 0px #29bbff;
+  background: var(--blue) linear-gradient(to bottom, #2dabf9 5%, var(--blue) 100%);
+  border-radius: 3px;
+  border: 1px solid #0b0e07;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--white);
+  font-size: 15px;
+  padding: 9px 23px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #263666;
+  text-align: center;
+}
+.btn-acceso:hover {
+  background: #0688fa linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+}
+.btn-acceso:active {
+  position: relative;
+  top: 1px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--metal);
+}
+
+.body-container {
+  width: 1200px;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--white);
+}
+
+.header-container {
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: 600;
+  padding: 40px;
+}
+.header-container img {
+  height: auto;
+}
+
+.banner-container {
+  display: flex;
+  flex-direction: column;
+}
+.banner-container img {
+  width: auto;
+}
+.banner-container figcaption {
+  margin-top: 20px;
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--orange);
+  text-align: center;
+}
+
+.listado-servicios-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 0 20px 20px;
+}
+.listado-servicios-container article {
+  padding: 20px;
+  width: 347px;
+}
+.listado-servicios-container article .inner-content-container {
+  border: 2px var(--blue) solid;
+  display: flex;
+  flex-direction: column;
+}
+.listado-servicios-container article .inner-content-container img {
+  width: auto;
+}
+.listado-servicios-container article .inner-content-container h3 {
+  text-align: center;
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: 800;
+}
+.listado-servicios-container article .inner-content-container p {
+  text-align: justify;
+  padding: 10px;
+}
+.listado-servicios-container article .inner-content-container .btn-acceso {
+  margin: 40px auto 20px;
+  font-weight: 600;
+}
+
+.footer-container {
+  padding: 40px;
+  background-color: var(--footer-blue);
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
+}
+.footer-container .disclaimer-container {
+  display: flex;
+  flex-direction: column;
+  padding-right: 160px;
+}
+.footer-container .disclaimer-container p {
+  text-align: justify;
+}
+.footer-container .disclaimer-container img {
+  margin: auto;
+  width: 200px;
+}
+.footer-container .social-container {
+  display: flex;
+  flex-direction: column;
+}
+.footer-container .social-container p {
+  margin: 20px auto;
+  font-weight: 700;
+}
+.footer-container .social-container .social-icons-container {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  padding: 10px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+header nav {
+  margin-left: auto;
+}
+header nav ul {
+  display: flex;
+  align-items: stretch;
+}
+header nav ul li {
+  display: inline;
+  padding: 1em;
+  border: 1px var(--white) solid;
+}
+header nav ul li:hover {
+  background-color: var(--light-blue);
+}
+
+:root {
+  --white: #FFFFFF;
+  --blue: #1551a1;
+  --light-blue: #1765cc;
+  --metal: #3a3d47;
+  --orange: #cb5c00;
+  --footer-blue: #062348;
+}
+
+/*
+  NOTA:
+  Uso este TP para practicar
+  tecnologías que estoy aprendiendo.
+
+  Sé que el código está desordenado y
+  con separaciones inconvenientes.
+  Es mi primera vez usando flex y
+  Sass.
+
+  TODO: Hacerlo responsive!
+ */
+
+/*# sourceMappingURL=styles.css.map */
